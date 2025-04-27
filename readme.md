@@ -60,7 +60,7 @@ python sysinfo.py --help
 ```
 === SYSTEM INFORMATION ===
 system         : Windows
-node_name      : BlazePC
+node_name      : UserPC
 release        : 10
 version        : 10.0.19045
 machine        : AMD64
