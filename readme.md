@@ -1,45 +1,89 @@
-# 🖥️ System Info Tool
+# System Info Tool
 
-A simple Python CLI tool that displays essential system information in a clean and colored format.
+A professional, modular Python tool to display or export detailed system metrics via Command Line Interface (CLI).
 
-## 🚀 Features
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python) 
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20MacOS-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- Operating system name and version
-- CPU model and number of cores
-- Total RAM
-- Local IP address
-- System uptime
+---
 
-## 🧰 Requirements
+## 📋 Features
 
-- Python 3.7+
-- Works on Linux and Windows
-- Recommended to use a virtual environment
+- View detailed system information (OS, CPU, Memory, Disk, Network)
+- Export system info to **JSON** or **TXT** file
+- Live monitoring of CPU and Memory usage
+- Cross-platform support (Windows, Linux, macOS)
+- User-friendly CLI with colored output
 
-## ⚙️ Installation
+---
 
-Create and activate a virtual environment:
+## 🚀 Installation
 
-python3 -m venv venv
-source venv/bin/activate
+Clone the repository:
 
-Install dependencies:
+```
+git clone https://github.com/Rootrik/system-info-tool.git
+cd system-info-tool
+```
 
-pip install psutil colorama
+Install required packages:
 
-## ▶️ Usage
+```
+pip install -r requirements.txt
+```
 
-Run the tool using:
+---
 
-python sysinfo.py
+## 🛠️ Usage
 
-## 📌 Notes
+| Command | Description |
+|:--------|:------------|
+| `python sysinfo.py --display` | Display all system information |
+| `python sysinfo.py --export systeminfo.json` | Export info to JSON file |
+| `python sysinfo.py --export report.txt` | Export info to TXT file |
+| `python sysinfo.py --live` | Start live monitoring (every 2 sec) |
+| `python sysinfo.py --live --interval 5` | Live monitoring with 5s interval |
 
-- Tested on Parrot OS and Windows 11
-- Displays local IP using socket logic (won't show public IP)
-- Easy to expand with more system info (GPU, disk usage, etc.)
+View help:
 
-## 🧠 Author
+```
+python sysinfo.py --help
+```
 
-Created by Rootrik 🔥  
-Learning full-stack development & ethical hacking.
+---
+
+## 📦 Example Screenshots
+
+**Display System Information:**
+
+```
+=== SYSTEM INFORMATION ===
+system         : Windows
+node_name      : BlazePC
+release        : 10
+version        : 10.0.19045
+machine        : AMD64
+processor      : Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+...
+```
+
+**Live Monitoring:**
+
+```
+=== LIVE MONITORING ===
+CPU Usage     : 12.5%
+Memory Usage  : 37.8%
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🤝 Credits
+
+Developed with ❤️ by Rootrik
